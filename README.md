@@ -1,4 +1,4 @@
-# The Autofllying controller C++ project Readme #
+# The Autoflying controller C++ project Readme #
 
 
 ## The project architecture is outlined as follow:
