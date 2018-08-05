@@ -1,6 +1,5 @@
-# The C++ Project Readme #
+# The C++ Autofllying controller C++ project Readme #
 
-Autofllying controller C++ project
 
 ## The project architecture is outlined as follow:
 This is the general architecture of the controller we are implementing.
@@ -42,10 +41,10 @@ If successful you should now see the quad level itself (as shown below), though 
 `GenerateMotorCommands()`
 1. Isolate the collective thrust, p, q
 2. Using the following we can convert the input to commands.
-//omega_4 = (c_bar + p_bar - r_bar - q_bar) / 4
-//omega_3 = (r_bar - p_bar) / 2 + omega_4
-//omega_2 = (c_bar - p_bar) / 2 - omega_3
-//omega_1 = c_bar - omega_2 - omega_3 - omega_4
+//omega_4 = (c_bar + p_bar - r_bar - q_bar) / 4  
+//omega_3 = (r_bar - p_bar) / 2 + omega_4  
+//omega_2 = (c_bar - p_bar) / 2 - omega_3  
+//omega_1 = c_bar - omega_2 - omega_3 - omega_4  
 
 `BodyRateControl()`
 This is a p controller. It takes in desired pqr and measure error by subtracting
