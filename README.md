@@ -1,4 +1,4 @@
-# The C++ Autofllying controller C++ project Readme #
+# The Autofllying controller C++ project Readme #
 
 
 ## The project architecture is outlined as follow:
@@ -40,7 +40,7 @@ If successful you should now see the quad level itself (as shown below), though 
 #### Answer:
 `GenerateMotorCommands()`
 1. Isolate the collective thrust, p, q
-2. Using the following we can convert the input to commands.
+2. Using the following we can convert the input to commands.  
 //omega_4 = (c_bar + p_bar - r_bar - q_bar) / 4  
 //omega_3 = (r_bar - p_bar) / 2 + omega_4  
 //omega_2 = (c_bar - p_bar) / 2 - omega_3  
